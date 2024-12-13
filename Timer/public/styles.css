@@ -38,8 +38,8 @@ body, html {
 /* Months container */
 .months-container {
     position: absolute;
-    top: 20.1%; /* Adjust to move up or down */
-    left: 83.5%; /* Adjust to move left or right */
+    top: 21.5%; /* Adjust to move up or down */
+    left: 80.5%; /* Adjust to move left or right */
     transform: translate(-50%, -50%); /* Center alignment for container */
     text-align: center;
     animation: floatMonths 2s infinite ease-in-out;
@@ -59,7 +59,7 @@ body, html {
 .days-container {
     position: absolute;
     top: 41%; /* Adjust to move up or down */
-    left: 83.5%; /* Adjust to move left or right */
+    left: 80.5%; /* Adjust to move left or right */
     transform: translate(-50%, -50%); /* Center alignment for container */
     text-align: center;
     animation: floatDays 2s infinite ease-in-out;
@@ -78,8 +78,8 @@ body, html {
 /* Hours container */
 .hours-container {
     position: absolute;
-    top: 63%; /* Adjust to move up or down */
-    left: 83.5%; /* Adjust to move left or right */
+    top: 60%; /* Adjust to move up or down */
+    left: 80.5%; /* Adjust to move left or right */
     transform: translate(-50%, -50%); /* Center alignment for container */
     text-align: center;
     animation: floatHours 2s infinite ease-in-out;
