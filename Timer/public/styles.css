@@ -1,0 +1,115 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Video background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Content styles */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Countdown styles */
+.countdown {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Months container */
+.months-container {
+    position: absolute;
+    top: 20.1%; /* Adjust to move up or down */
+    left: 83.5%; /* Adjust to move left or right */
+    transform: translate(-50%, -50%); /* Center alignment for container */
+    text-align: center;
+    animation: floatMonths 2s infinite ease-in-out;
+}
+
+.months-container .number {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.months-container .label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Days container */
+.days-container {
+    position: absolute;
+    top: 41%; /* Adjust to move up or down */
+    left: 83.5%; /* Adjust to move left or right */
+    transform: translate(-50%, -50%); /* Center alignment for container */
+    text-align: center;
+    animation: floatDays 2s infinite ease-in-out;
+}
+
+.days-container .number {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.days-container .label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Hours container */
+.hours-container {
+    position: absolute;
+    top: 63%; /* Adjust to move up or down */
+    left: 83.5%; /* Adjust to move left or right */
+    transform: translate(-50%, -50%); /* Center alignment for container */
+    text-align: center;
+    animation: floatHours 2s infinite ease-in-out;
+}
+
+.hours-container .number {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.hours-container .label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Independent animations */
+@keyframes floatMonths {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-3px); }
+    100% { transform: translate(-50%, -50%) translateY(0); }
+}
+
+@keyframes floatDays {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-3px); }
+    100% { transform: translate(-50%, -50%) translateY(0); }
+}
+
+@keyframes floatHours {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-3px); }
+    100% { transform: translate(-50%, -50%) translateY(0); }
+}
