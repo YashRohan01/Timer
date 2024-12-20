@@ -14,8 +14,8 @@ function updateCountdown() {
 
     // Calculate time remaining
     const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.44)); // Approximate days per month
-    const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24)-2);
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)+1);
+    const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
     // Update the HTML
     document.querySelector(".months-container .number").textContent = months;
